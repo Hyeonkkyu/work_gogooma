@@ -274,7 +274,7 @@ h2>.titIcon {
     position: relative;
 }
 
-#point .contentBox>li>a>h3 {
+#point .contentBox>li>a>.title {
     position: absolute;
     bottom: 0;
     width: 100%;
