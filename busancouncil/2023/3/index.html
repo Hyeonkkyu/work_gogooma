@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="모바일 부산의회소식">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="모바일 부산의회소식">
+    <meta property="og:description" content="모바일 부산의회소식">
+    <meta property="og:image" content="../../img/common/sns23-1.jpg">
+    <meta property="fb:app_id" content="">
+    <meta name="twitter:title" content="모바일 부산의회소식">
+    <meta name="twitter:description" content="모바일 부산의회소식">
+    <meta name="twitter:image" content="../../img/common/sns23-1.jpg">
+
+    <title>모바일 부산의회소식</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/slick.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/ui.js"></script>
+    <script src="../../js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <input type="hidden" id="post-url" value="http://www.mobilebusancouncil.kr/2023/3/">
+        <input type="hidden" id="post-title" value="모바일 부산의회소식">
+        <input type="hidden" id="site-sitename" value="모바일 부산의회소식">
+        <div class="menu"><span></span></div>
+        <div class="side_menu">
+            <div class="close"></div>
+            <ul>
+                <li class="goHome"><a href="#page1">홈으로</a></li>
+                <li>
+                    <a class="smenuTit">의정 뉴스</a>
+                    <ul class="smenu">
+                        <li><a href="#page2">주요안건 처리현황</a></li>
+                        <li><a href="#page3">상임위원회 활동</a></li>
+                        <li><a href="#page5 ">의정 단신</a></li>
+                        <li><a href="#page6">5분 자유발언</a></li>
+                        <li><a href="#page10">조례 인사이드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="smenuTit">의정 25시</a>
+                    <ul class="smenu">
+                        <li><a href="#page11">2030부산세계박람회<br>유치 활동</a></li>
+                        <li><a href="#page13">의원연구단체 활동</a></li>
+                        <li><a href="#page14">내 인생의 책 한 권</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="smenuTit">소통 25시</a>
+                    <ul class="smenu">
+                        <li><a href="#page16 ">민생현장을 가다</a></li>
+                        <li><a href="#page17">부산을 상상하다</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="smenuTit">힐링 부산</a>
+                    <ul class="smenu">
+                        <li><a href="#page18">부산을 거닐다</a></li>
+                    </ul>
+                </li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li class="kakao"><a id="kakao-link-btn" href="javascript:sendLink()" title="Share on KakaoTalk">카카오톡
+                        공유하기</a></li>
+                <li class="go"><a href="https://council.busan.go.kr/council/index" target="_blank">부산시의회 바로가기</a>
+                </li>
+                <li class="pastnews"><a href="http://www.mobilegangseo.kr" target="_blank">이전신문 보기</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="logo">부산의회소식</div>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide homeCover" data-hash="page1">
+                    <main>
+                        <section id="coverPage">
+                            <div class="blur">
+                                <div class="coverInfo">
+                                    <img src="/img/home/testcoverpage.png">
+                                    <h3>
+                                        부산 의회 소식
+                                    </h3>
+                                    <p>2023.03 통권 제 <span>234</span>호</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="mainNews" class="content section">
+                            <h2><i class="xi-check-square-o titIcon"></i>
+                                <p>주요 기사</p>
+                            </h2>
+                            <div class="newsSlider sliderArrow sliderDots">
+                                <div class="newsBox">
+                                    <a href="#page11">
+                                        <figure><img src="../../img/mn23-3/main1.jpg"></figure>
+                                        <div class="desc">
+                                            <h3>2030부산세계박람회 유치와 성공 개최를<br>향한 위대한 항해</h3>
+                                            <p class="titleLong">2030부산세계박람회를 향한 대한민국의 발걸음이 빨라지고 있습니다. 부산시민들의 오랜 열망 끝에
+                                                지난 2021년 6월,
+                                                국제박람회기구(BIE)에 ‘세계의 대전환, 더 나은 미래를 향한 항해 (Trans forming our world,
+                                                Navigating toward a better future)’를 주제로 유치신청서를 제출하였습니다. 그리고 새 정부의
+                                                국정과제화로 범국가적인 추진동력을 확보하며 2030세계박람회 유치에 대한 부산시민의 기대와 열망은 더욱더 높아지고 있습니다.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="newsBox">
+                                    <a href="#page16">
+                                        <figure><img src="../../img/mn23-3/main2.jpg"></figure>
+                                        <div class="desc">
+                                            <h3>민생현장을 가다!<br>시민의 목소리를 듣습니다!</h3>
+                                            <p class="titleLong">한국의 마추픽추, 희망찬 내일을 꿈꾸는 감천문화마을!
+                                                바다를 바라보며 계단처럼 층층이 세워진 알록달록한 집들로 마을을 형성한 한국의 마추픽추, 감천문화마을! 부산에 거주하는 예술가와
+                                                주민들, 여러 활동가가 합심하고 협력해 골목 곳곳에 그림을 채우면서 마을은 그 자체로 하나의 예술 작품으로 자리 잡았다. 이제는
+                                                부산을 넘어 전국에서도 손꼽히는 명소로 국내외 관광객들의 발길이 끊이지 않는 이곳, 감천문화마을에서 강석동 감천문화 마을상인회장을
+                                                만나 생생한 이야기를 들어봤다.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="newsBox">
+                                    <a href="#page17">
+                                        <figure><img src="../../img/mn23-3/main3.jpg"></figure>
+                                        <div class="desc">
+                                            <h3>아름답고 풍요로운 도시, 부산으로 오세요!</h3>
+                                            <p>안녕하세요. 저는 남한 정착 3년 차, 부산 시민 박송현(만 64세, 여)입니다. 저는 평안북도 신의주시에서 왔습니다. 신의주는
+                                                압록강을 사이에 두고 중국 단둥시와 마주보고 있습니다. 고향과 거리가 멀어지면 마음속의 그리움도 멀어질까요? 고향과 먼 곳으로
+                                                갈수록 힘들고 어려웠던 과거를 쉽게 잊을 거란 생각에 고향 신의주와 가장 멀리 떨어진 이곳, ‘부산’으로 오게 되었습니다.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="newsBox">
+                                    <a href="#page18">
+                                        <figure><img src="../../img/mn23-3/main4.jpg"></figure>
+                                        <div class="desc">
+                                            <h3>행복을 품은 도시, 미래를 여는 기장!</h3>
+                                            <p>푸른 하늘 아래 드넓은 바다를 바라볼 때면, 보는 사람의 마음까지도 환해지는 기분이 든다. 햇살이 따사로운 봄에는 눈부시게 아름다운
+                                                바다를 품은 기장으로 떠나보자!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="point" class="content section">
+                            <ul class="contentBox">
+                                <li class="left">
+                                    <a href="#page6">
+                                        <img src="../../img/common/point1.jpg">
+                                        <h3>5분 자유발언</h3>
+                                    </a>
+                                </li>
+                                <li class="right">
+                                    <a href="#page10">
+                                        <img src="../../img/common/point2.jpg">
+                                        <h3>조례 인사이드</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- <section id="lastIssue" class="content section">
+                            <h2><i class="xi-list-dot titIcon"></i>
+                                <p>지난호 보기</p>
+                            </h2>
+                            <ul class="issueSlider sliderArrow sliderDots">
+                                <li class="issueBox"><a href=""><img src="/img/home/news01.png"></a></li>
+                                <li class="issueBox"><a href=""><img src="/img/home/news02.png"></a></li>
+                                <li class="issueBox"><a href=""><img src="/img/home/news03.png"></a></li>
+                                <li class="issueBox"><a href=""><img src="/img/home/news01.png"></a></li>
+                                <li class="issueBox"><a href=""><img src="/img/home/news02.png"></a></li>
+                                <li class="issueBox"><a href=""><img src="/img/home/news03.png"></a></li>
+                            </ul>
+                        </section> -->
+                    </main>
+                </div>
+                <div class="swiper-slide" data-hash="page2">
+                    <img src="../../img/mn23-3/img2.jpg">
+
+                </div>
+                <div class="swiper-slide" data-hash="page3">
+                    <img src="../../img/mn23-3/img3.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page4">
+                    <img src="../../img/mn23-3/img4.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page5">
+                    <img src="../../img/mn23-3/img5.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page6">
+                    <img src="../../img/mn23-3/img6.jpg">
+                    <img src="../../img/mn23-3/img6-1.jpg">
+                    <img src="../../img/mn23-3/img6-2.jpg">
+                    <img src="../../img/mn23-3/img6-3.jpg">
+                    <img src="../../img/mn23-3/img6-4.jpg">
+                    <img src="../../img/mn23-3/img6-5.jpg">
+                    <img src="../../img/mn23-3/img6-6.jpg">
+                    <img src="../../img/mn23-3/img6-7.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page7">
+                    <img src="../../img/mn23-3/img7.jpg">
+                    <img src="../../img/mn23-3/img7-1.jpg">
+                    <img src="../../img/mn23-3/img7-2.jpg">
+                    <img src="../../img/mn23-3/img7-3.jpg">
+                    <img src="../../img/mn23-3/img7-4.jpg">
+                    <img src="../../img/mn23-3/img7-5.jpg">
+                    <img src="../../img/mn23-3/img7-6.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page8">
+                    <img src="../../img/mn23-3/img8.jpg">
+                    <img src="../../img/mn23-3/img8-1.jpg">
+                    <img src="../../img/mn23-3/img8-2.jpg">
+                    <img src="../../img/mn23-3/img8-3.jpg">
+                    <img src="../../img/mn23-3/img8-4.jpg">
+                    <img src="../../img/mn23-3/img8-5.jpg">
+                    <img src="../../img/mn23-3/img8-6.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page9">
+                    <img src="../../img/mn23-3/img9.jpg">
+                    <img src="../../img/mn23-3/img9-1.jpg">
+                    <img src="../../img/mn23-3/img9-2.jpg">
+                    <img src="../../img/mn23-3/img9-3.jpg">
+                    <img src="../../img/mn23-3/img9-4.jpg">
+                    <img src="../../img/mn23-3/img9-5.jpg">
+                    <img src="../../img/mn23-3/img9-6.jpg">
+                    <img src="../../img/mn23-3/img9-7.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page10">
+                    <img src="../../img/mn23-3/img10.jpg">
+                    <img src="../../img/mn23-3/img10-1.jpg">
+                    <img src="../../img/mn23-3/img10-2.jpg">
+                    <img src="../../img/mn23-3/img10-3.jpg">
+                    <img src="../../img/mn23-3/img10-4.jpg">
+                    <img src="../../img/mn23-3/img10-5.jpg">
+                    <img src="../../img/mn23-3/img10-6.jpg">
+                    <img src="../../img/mn23-3/img10-7.jpg">
+                    <img src="../../img/mn23-3/img10-8.jpg">
+                    <img src="../../img/mn23-3/img10-9.jpg">
+                    <img src="../../img/mn23-3/img10-10.jpg">
+                    <img src="../../img/mn23-3/img10-11.jpg">
+                    <img src="../../img/mn23-3/img10-12.jpg">
+                    <img src="../../img/mn23-3/img10-13.jpg">
+                    <img src="../../img/mn23-3/img10-14.jpg">
+                    <img src="../../img/mn23-3/img10-15.jpg">
+                    <img src="../../img/mn23-3/img10-16.jpg">
+                    <img src="../../img/mn23-3/img10-17.jpg">
+                    <img src="../../img/mn23-3/img10-18.jpg">
+                    <img src="../../img/mn23-3/img10-19.jpg">
+                    <img src="../../img/mn23-3/img10-20.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page11">
+                    <img src="../../img/mn23-3/img11.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page12">
+                    <img src="../../img/mn23-3/img12.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page13">
+                    <img src="../../img/mn23-3/img13.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page14">
+                    <img src="../../img/mn23-3/img14.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page15">
+                    <img src="../../img/mn23-3/img15.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page16">
+                    <img src="../../img/mn23-3/img16.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page17">
+                    <img src="../../img/mn23-3/img17.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page18">
+                    <img src="../../img/mn23-3/img18.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page19">
+                    <img src="../../img/mn23-3/img19.jpg">
+                </div>
+                <div class="swiper-slide" data-hash="page20">
+                    <img src="../../img/mn23-3/img20.jpg">
+                </div>
+                <!-- <div class="swiper-slide" data-hash="page21">
+                    <img src="../../img/common/end1.jpg">
+                    <a href="https://www.youtube.com/@bsgangseogu">
+                        <img src="../../img/common/end2.jpg">
+                    </a>
+                    <a href="https://blog.naver.com/bsgangseogu">
+                        <img src="../../img/common/end3.jpg">
+                    </a>
+                    <a href="https://www.facebook.com/bsgangseo/">
+                        <img src="../../img/common/end4.jpg">
+                    </a>
+                    <a href="https://www.instagram.com/bsgangseogu/">
+                        <img src="../../img/common/end5.jpg">
+                    </a>
+                    <img src="../../img/common/end6.jpg">
+                </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <footer>
+            <h3>
+                <a href="https://council.busan.go.kr" target="_blank"><img src="../../img/home/bmc_logo.png"></a>
+            </h3>
+            <ul id="pubInfo">
+                <li><strong>발행일</strong><span>2023.03.제234호</span></li>
+                <li><strong>발행처</strong><span>부산광역시의회</span></li>
+                <li><strong>편집인</strong><span>부산광역시의회 홍보담당관</span></li>
+                <li><strong>주소</strong><span>부산광역시 연제구 중앙대로 1001</span></li>
+            </ul>
+            <ul id="sns">
+                <li>
+                    <a href="https://www.facebook.com/busancouncil/" target="_blank"><i class="xi-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/busancouncil/" target="_blank"><i class="xi-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCH3zFGQV84l4uBVOXnjw46Q" target="_blank"><i
+                            class="xi-youtube-play"></i></a>
+                </li>
+                <li>
+                    <a href="https://pf.kakao.com/_xjxlExdj" target="_blank"><i class="xi-kakaotalk"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/BusanCouncil" target="_blank"><i class="xi-twitter"></i></a>
+                </li>
+            </ul>
+            <p>&copy;Busan Metropolitan Council. all rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        var timeout, Swiper;
+        var n_time = 3000;
+        Swiper = new Swiper('.swiper-container', {
+            loop: false,
+            autoHeight: true, //enable auto height
+            spaceBetween: 20,
+            loop: true,
+            hashNavigation: {
+                watchState: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            onInit: function (swiper) {
+                timeout = setTimeout(function () {
+                    $('.swiper-button-next, .swiper-button-prev, .swiper-pagination').fadeOut();
+                }, n_time);
+            }
+        });
+        Swiper.on('transitionStart', function () {
+            $(window).scrollTop(0);
+        });
+        Swiper.on('slideChange', function () {
+            clearTimeout(timeout);
+            $('.swiper-button-next, .swiper-button-prev, .swiper-pagination').fadeIn();
+        });
+        Swiper.on('transitionEnd', function () {
+            timeout = setTimeout(function () {
+                $('.swiper-button-next, .swiper-button-prev, .swiper-pagination').fadeOut();
+            }, n_time);
+        });
+
+        /* 카카오톡 공유 버튼 */
+        var _sitename = document.getElementById("site-sitename").value;
+        var _url = document.getElementById("post-url").value;
+        var _title = document.getElementById("post-title").value;
+        var _imgeUrl = "http://www.mobilegangseo.kr/img/common/kakao23-1.jpg"
+        // Kakao.init('ca999793a34c8c259a70a83273262093');
+        Kakao.init('a6398bfa830179c047bf2c7ba43a2f7d');
+        function sendLink() {
+            Kakao.Link.sendDefault({
+                objectType: 'feed',
+                content: {
+                    title: _title,
+                    description: _sitename,
+                    imageUrl: _imgeUrl,
+                    imageWidth: 960,
+                    imageHeight: 1400,
+                    link: {
+                        mobileWebUrl: _url,
+                        webUrl: _url
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

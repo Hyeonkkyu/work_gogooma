@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<!-- SNS 시작 -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="부산남구신문"><!-- 제목 -->
+<meta property="og:url" content="">
+<meta property="og:title" content="부산남구신문"><!-- 제목 -->
+<meta property="og:description" content="모바일로 보는 부산남구신문"><!-- 서브카피 -->
+<meta property="og:image" content="../../img/common/sns22-12.jpg"><!-- 수환이행님 공유했을때 썸네일 입니다. -->
+<meta property="fb:app_id" content="">
+<meta name="twitter:title" content="부산남구신문"><!-- 제목 -->
+<meta name="twitter:description" content="모바일로 보는 부산남구신문"><!-- 서브카피 -->
+<meta name="twitter:image" content="../../img/common/sns22-12.jpg"><!-- 수환이행님 공유했을때 썸네일 입니다. -->
+<!-- SNS 끝 -->
+<title>부산남구신문</title><!-- 제목 -->
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <input type="hidden" id="post-url" value="http://www.mobilenamgu.kr/2022/12/"><!-- 수환이행님 카카오톡 공유했을때 링크url 입니다. -->
+    <input type="hidden" id="post-title" value="부산남구신문"><!-- 제목 -->
+    <input type="hidden" id="site-sitename" value="모바일로 보는 부산남구신문"><!-- 서브카피 -->
+	<div class="menu"><span></span></div>
+	<div class="side_menu">
+		<div class="close"></div>
+		<ul>
+            <li><a href="#page2">1면뉴스</a></li>
+            <li><a href="#page3">평화도시남구</a></li>
+            <li><a href="#page5">의정소식</a></li>
+            <li><a href="#page7">구정종합</a></li>
+            <li><a href="#page10">생활문화</a></li>
+            <li><a href="#page13">남구 근대사 복원 프로젝트</a></li>
+            <li><a href="#page14">우리동네 이야기</a></li>
+            <li><a href="#page18">남구 사람들</a></li>
+            <li><a href="#page19">오피니언</a></li>
+            <li>&nbsp;</li>
+			<li>&nbsp;</li>
+			<li class="kakao"><a id="kakao-link-btn" href="javascript:sendLink()" title="Share on KakaoTalk">카카오톡 공유하기</a></li>
+			<li class="go"><a href="https://www.bsnamgu.go.kr/index.namgu" target="_blank">남구청 바로가기</a></li>
+            <li class="pastnews"><a href="http://www.mobilenamgu.kr" target="_blank">이전신문 보기</a></li>
+        </ul>
+	</div>
+	<div class="header">
+		<div class="logo">부산남구신문</div>
+	</div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" data-hash="page1">
+                <img src="../../img/mn22-12/img1.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page2">
+                <img src="../../img/mn22-12/img2.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page3">
+                <img src="../../img/mn22-12/img3.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page4">
+                <img src="../../img/mn22-12/img4.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page5">
+                <img src="../../img/mn22-12/img5.jpg">
+                <a href="https://council.bsnamgu.go.kr">
+                    <img src="../../img//mn22-12/img5-1.jpg">
+                </a>
+                <a href="https://www.youtube.com/channel/UC5ONher6NEcRZ0w2LZNvYzw">
+                    <img src="../../img//mn22-12/img5-2.jpg">
+                </a>
+            </div>
+			<div class="swiper-slide" data-hash="page6">
+                <img src="../../img/mn22-12/img6.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page7">
+                <img src="../../img/mn22-12/img7.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page8">
+                <img src="../../img//mn22-12/img8.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page9">
+                <img src="../../img/mn22-12/img9.jpg">
+            </div>
+            <div class="swiper-slide" data-hash="page10">
+                <img src="../../img/mn22-12/img10.jpg">
+                <a href="https://m.site.naver.com/qrcode/view.naver?v=0QCp4">
+                    <img src="../../img//mn22-12/img10-1.jpg">
+                </a>
+                <img src="../../img//mn22-12/img10-2.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page11">
+                <img src="../../img/mn22-12/img11.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page12">
+                <img src="../../img/mn22-12/img12.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page13">
+                <img src="../../img/mn22-12/img13.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page14">
+                <img src="../../img/mn22-12/img14.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page15">
+                <img src="../../img/mn22-12/img15.jpg">
+            </div>
+			<div class="swiper-slide" data-hash="page16">
+                <img src="../../img/mn22-12/img16.jpg">
+            </div>
+            <div class="swiper-slide" data-hash="page17">
+                <img src="../../img/mn22-12/img17.jpg">
+            </div>
+            <div class="swiper-slide" data-hash="page18">
+                <img src="../../img/mn22-12/img18.jpg">
+            </div>
+            <div class="swiper-slide" data-hash="page19">
+                <img src="../../img/mn22-12/img19.jpg">
+            </div>
+            <div class="swiper-slide" data-hash="page20">
+                <img src="../../img/mn22-12/img20.jpg">
+            </div>
+            <div class="swiper-slide" data-hash="page21">
+                <img src="../../img/mn22-12/img21.jpg">
+            </div>
+            <div class="swiper-slide" data-hash="page22">
+                <img src="../../img/mn22-12/img22.jpg">
+            </div>
+            <div class="swiper-slide" data-hash="page23">
+                <img src="../../img/common/end1.jpg">
+                <a href="https://www.youtube.com/channel/UCpHXF2f7OiA0UyscEY8VrJg">
+                    <img src="../../img/common/end2.jpg">
+                </a>
+                <a href="https://blog.naver.com/bsnamgupb">
+                    <img src="../../img/common/end3.jpg">
+                </a>
+                <a href="https://www.facebook.com/busannamgu/">
+                    <img src="../../img/common/end4.jpg">
+                </a>
+                <a href="https://www.instagram.com/bsnamgu_official/">
+                    <img src="../../img/common/end5.jpg">
+                </a>
+                <img src="../../img/common/end6.jpg">
+            </div>
+    </div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+</div>
+<script>
+    var timeout, Swiper;
+    var n_time = 3000;
+    Swiper = new Swiper('.swiper-container', {
+		loop: false,
+	    autoHeight: true, //enable auto height
+	    spaceBetween: 20,
+	    loop: true,
+	    hashNavigation: {
+	        watchState: true,
+	    },
+	    pagination: {
+	        el: '.swiper-pagination',
+	        type: 'fraction',
+	        clickable: true,
+	    },
+	    navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	    },
+        onInit: function(swiper){
+            timeout = setTimeout(function(){
+                $('.swiper-button-next, .swiper-button-prev, .swiper-pagination').fadeOut();
+            }, n_time);
+        }
+	});
+    Swiper.on('transitionStart', function () {
+        $(window).scrollTop(0);
+    });
+    Swiper.on('slideChange', function () {
+        clearTimeout(timeout);
+        $('.swiper-button-next, .swiper-button-prev, .swiper-pagination').fadeIn();
+    });
+    Swiper.on('transitionEnd', function () {
+        timeout = setTimeout(function(){
+            $('.swiper-button-next, .swiper-button-prev, .swiper-pagination').fadeOut();
+        }, n_time);
+    });
+    
+    /* 카카오톡 공유 버튼 */
+    var _sitename = document.getElementById("site-sitename").value;
+    var _url = document.getElementById("post-url").value;
+    var _title = document.getElementById("post-title").value;
+    var _imgeUrl = "http://www.mobilenamgu.kr/img/common/kakao22-12.jpg";/* 수환이행님 카카오톡 공유했을때 썸네일 입니다. */
+    Kakao.init('dd15af40561ef7470f901be4417835a4');
+    function sendLink() {
+        Kakao.Link.sendDefault({
+            objectType: 'feed',
+            content: {
+                title: _title,
+                description: _sitename,
+                imageUrl: _imgeUrl,
+                imageWidth: 960,
+                imageHeight: 1400,
+                link: {
+                    mobileWebUrl: _url,
+                    webUrl: _url
+                }
+            }
+        });
+    }
+</script>
+</body>
+</html>

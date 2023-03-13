@@ -1,0 +1,9 @@
+.btn {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #5f9ea0;
+}

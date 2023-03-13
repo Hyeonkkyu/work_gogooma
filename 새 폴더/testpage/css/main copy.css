@@ -1,0 +1,232 @@
+* {
+    outline: 1px solid rgb(206, 57, 57);
+}
+
+html {
+    /* width: 768px; */
+    font-size: 16px;
+}
+
+body {
+    /* width: 360px;
+    margin: 0 auto; */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section {
+    width: 360px;
+    margin: 0 auto;
+    padding: 50px 10px 30px 10px;
+}
+
+/* .content  {
+    border-bottom: 1px solid #5f5f5f;
+} */
+
+/* ---------- HEADER ---------- */
+
+header {
+    height: 50px;
+    background-color: darkgreen;
+}
+
+/* ---------- MAIN ---------- */
+
+#coverPage {
+    /* height: calc(100vh - 50px); */
+    width: 360px;
+    margin: 0 auto;
+}
+
+/* 
+#coverPage>img {
+    display: block; 
+    margin: 0px auto;
+} */
+
+/* ---------- MAIN - MAINNEWS ---------- */
+
+#mainNews {}
+
+#mainNews .newsSlider {
+    padding: 0 20px;
+}
+
+#mainNews .newsSlider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-left: 1px solid #202020;
+    border-top: 1px solid #202020;
+}
+
+#mainNews .newsSlider .slick-prev {
+    margin: 0 0 0 -155px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#mainNews .newsSlider .slick-next {
+    margin: 0 0 0 155px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+#mainNews .newsSlider .newsBox {
+    /* display: flex;
+    gap: 20px; */
+    /* margin: 0 10px; */
+    padding: 0 10px;
+    /* box-shadow: 3px 3px 3px rgba(132, 132, 132, 0.445); */
+}
+
+#mainNews .newsSlider .newsBox>a {
+    position: relative;
+}
+
+#mainNews .newsSlider .newsBox>a>.desc {
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    background-color: hsla(0, 0%, 13%, 0.45);
+    color: #f2f2f2;
+    padding: 5px;
+}
+
+#mainNews .newsSlider .newsBox>a>.desc>h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+#mainNews .newsSlider .newsBox>a>.desc>p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* ---------- MAIN - PUBLICATION ---------- */
+
+#publication {
+    /* background-color: #e0f2f7be; */
+}
+
+#publication .pubSlider {
+    padding: 0 20px;
+}
+
+#publication .pubSlider .pubBox>.testBox {
+    /* margin: 0 5px; */
+    /* border-radius: 50%; */
+    /* background-color: #b3b3b3; */
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    /* width: 30px;
+    height: 30px; */
+    background-color: #7e0d0d;
+    outline: 1px solid #ff37c6;
+}
+
+#publication .pubSlider .pubBox>.testBox>a {
+    /* display: block;
+    width: 70px;
+    height: 70px; */
+    /* margin: 0 5px; */
+    padding: 10px;
+    color: #f2f2f2;
+}
+
+#publication .pubSlider .pubBox>.testBox>a>p {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+#publication .pubSlider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-left: 1px solid #202020;
+    border-top: 1px solid #202020;
+}
+
+#publication .pubSlider .slick-prev {
+    margin: 0 0 0 -155px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#publication .pubSlider .slick-next {
+    margin: 0 0 0 155px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* ---------- MAIN - PARTICIPATION ---------- */
+
+#participation .buttonBox>ul>li {
+    /* background-color: #FBB03F; 
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px; */
+    height: 100px;
+}
+
+#participation .buttonBox>ul>li:nth-child(-n+3) {
+    margin-bottom: 20px;
+}
+
+#participation .buttonBox>ul>li>a {
+    background-color: #FBB03F;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #f9f9f9;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer>h3 {
+    margin-bottom: 10px;
+}
+
+footer>#pubInfo {
+    line-height: 20px;
+}
+
+footer>#pubInfo>li>strong {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+footer>#sns {
+    margin-bottom: 20px;
+}
+
+footer>p {
+    font-size: 10px;
+    color: #949494;
+}
