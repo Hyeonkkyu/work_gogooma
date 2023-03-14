@@ -277,7 +277,7 @@ h2>.titIcon {
 #point .contentBox>li>a>.title {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 173px;
     background-color: hsla(0, 0%, 13%, 0.45);
     color: #fff;
     padding: 10px 0;
