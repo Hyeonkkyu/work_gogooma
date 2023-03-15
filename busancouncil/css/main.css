@@ -88,26 +88,46 @@ h2>.titIcon {
 
 /* ---------- BUTTON ---------- */
 
-.btn {
-    /* position: fixed;
-    margin-left: calc(10% - 15px);
-    bottom: 10px;
-    width: 80%;
-    border-radius: 20px;
-    font-size: 20px;
-    background-color: #5f9ea0;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0 2px 2px 0 #cccccc; */
+.fixedBtn {
+    display: none;
     position: fixed;
-    z-index: 999;
-    bottom: 10px;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
+    bottom: 50px;
+    width: 350px;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 20px;
-    padding: 20px;
-    width: 80%;
-    background-color: #5f9ea0;
+    background-color: #02B1C2;
+    padding: 15px 0;
+    box-shadow: 3px 3px 3px rgba(20, 20, 20, 0.45);
+    z-index: 999;
+    color: #ffffff;
+}
+
+.fixedBtn::after {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-120deg);
+    top: 63%;
+    left: 93%;
+    content: "\eb54";
+    font-family: 'xeicon';
+    font-size: 40px;
+    color: #ffffff;
+    z-index: -1;
+}
+
+.fixedBtn>a>div {
+    text-align: center;
+}
+
+.fixedBtn>a>div>p {
+    font-size: 13px;
+    font-weight: 18px;
+    margin-bottom: 8px;
+}
+
+.fixedBtn>a>div>strong {
+    font-size: 18px;
+    font-weight: 18px;
 }
 
 /* ---------- MAIN ---------- */
@@ -115,7 +135,7 @@ h2>.titIcon {
 #coverPage {
     height: 70vh;
     overflow: hidden;
-    background-image: url("../img/home/testBg.png");
+    background-image: url("../img/common/bg23-3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -276,8 +296,9 @@ h2>.titIcon {
 
 #point .contentBox>li>a>.title {
     position: absolute;
+    font-weight: bold;
     bottom: 0;
-    width: 173px;
+    width: 175px;
     background-color: hsla(0, 0%, 13%, 0.45);
     color: #fff;
     padding: 10px 0;
