@@ -15,7 +15,7 @@ $(function () {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 3500,
-        pauseOnHover: false,
+        pauseOnHover: true,
     });
 })
 
@@ -34,38 +34,38 @@ setInterval(function () {
             // element.innerHTML = nowPage;
 
             if (nowPage == "#page2") {
-                element.style.backgroundColor = "#02B1C2";
+                element.style.backgroundColor = "#3cacbb";
                 element.innerHTML = "<a href='https://council.busan.go.kr/broadcast/5minutes#copyUrl'><div><p>세부적인 주요안건 처리현황을 확인하실 수 있습니다.</p><strong>[부산시의회 홈페이지 바로가기]</strong></div></a>";
                 element.style.display = "block";
             }
             else if (nowPage == "#page6") {
-                element.style.backgroundColor = "#B0A9D1";
-                element.innerHTML = "<a href='https://council.busan.go.kr/broadcast/5minutes#copyUrl' target='_blank'><div><p>세부적인 5분 자유발언 내용을 확인하실 수 있습니다.</p><strong>[부산시의회 5분 자유발언 바로가기]</strong></div></a>";
+                element.style.backgroundColor = "#8e72ca";
+                element.innerHTML = "<a href='https://council.busan.go.kr/broadcast/5minutes#copyUrl' target='_blank'><div><p>5분 자유발언 상세 내용을 확인하실 수 있습니다.</p><strong>[부산시의회 5분 자유발언 바로가기]</strong></div></a>";
                 element.style.display = "block";
             }
             else if (nowPage == "#page7") {
-                element.style.backgroundColor = "#B0A9D1";
-                element.innerHTML = "<a href='https://council.busan.go.kr/broadcast/5minutes#copyUrl' target='_blank'><div><p>세부적인 5분 자유발언 내용을 확인하실 수 있습니다.</p><strong>[부산시의회 5분 자유발언 바로가기]</strong></div></a>";
+                element.style.backgroundColor = "#8e72ca";
+                element.innerHTML = "<a href='https://council.busan.go.kr/broadcast/5minutes#copyUrl' target='_blank'><div><p>5분 자유발언 상세 내용을 확인하실 수 있습니다.</p><strong>[부산시의회 5분 자유발언 바로가기]</strong></div></a>";
                 element.style.display = "block";
             }
             else if (nowPage == "#page8") {
-                element.style.backgroundColor = "#B0A9D1";
-                element.innerHTML = "<a href='https://council.busan.go.kr/broadcast/5minutes#copyUrl' target='_blank'><div><p>세부적인 5분 자유발언 내용을 확인하실 수 있습니다.</p><strong>[부산시의회 5분 자유발언 바로가기]</strong></div></a>";
+                element.style.backgroundColor = "#8e72ca";
+                element.innerHTML = "<a href='https://council.busan.go.kr/broadcast/5minutes#copyUrl' target='_blank'><div><p>5분 자유발언 상세 내용을 확인하실 수 있습니다.</p><strong>[부산시의회 5분 자유발언 바로가기]</strong></div></a>";
                 element.style.display = "block";
             }
             else if (nowPage == "#page9") {
-                element.style.backgroundColor = "#B0A9D1";
-                element.innerHTML = "<a href='https://council.busan.go.kr/broadcast/5minutes#copyUrl' target='_blank'><div><p>세부적인 5분 자유발언 내용을 확인하실 수 있습니다.</p><strong>[부산시의회 5분 자유발언 바로가기]</strong></div></a>";
+                element.style.backgroundColor = "#8e72ca";
+                element.innerHTML = "<a href='https://council.busan.go.kr/broadcast/5minutes#copyUrl' target='_blank'><div><p>5분 자유발언 상세 내용을 확인하실 수 있습니다.</p><strong>[부산시의회 5분 자유발언 바로가기]</strong></div></a>";
                 element.style.display = "block";
             }
             else if (nowPage == "#page10") {
-                element.style.backgroundColor = "#713745";
-                element.innerHTML = "<a href='https://council.busan.go.kr/council/bbs3' target='_blank'><div><p>해당 조례안에 대한 자세한 정보를 확인하실 수 있습니다.</p><strong>[부산시의회 입법예고 바로가기]</strong></div></a>";
+                element.style.backgroundColor = "#727ad3";
+                element.innerHTML = "<a href='https://council.busan.go.kr/assem/index.busan?menuCd=DOM_000000103008000000' target='_blank'><div><p>해당 조례안에 대한 자세한 정보를 확인하실 수 있습니다.</p><strong>[부산시의회 의안정보 바로가기]</strong></div></a>";
                 element.style.display = "block";
             }
             else if (nowPage == "#page13") {
-                element.style.backgroundColor = "#821316";
-                element.innerHTML = "<a href='https://youtube.com/@busancouncil' target='_blank'><div><p>제9대 부산광역시의회 연구단체와 활동을<br>확인하실 수 있습니다.</p><strong>[부산시의회 유튜브 바로가기]</strong></div></a>";
+                element.style.backgroundColor = "#4db8b8";
+                element.innerHTML = "<a href='https://youtube.com/@busancouncil' target='_blank'><div><p>의원연구단체와 활동을 영상으로 확인하실 수 있습니다.</p><strong>[부산시의회 유튜브 바로가기]</strong></div></a>";
                 element.style.display = "block";
             } else {
                 element.style.display = "none";

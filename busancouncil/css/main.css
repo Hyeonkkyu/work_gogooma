@@ -92,12 +92,12 @@ h2>.titIcon {
     display: none;
     position: fixed;
     bottom: 50px;
-    width: 350px;
+    width: 320px;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 20px;
-    background-color: #02B1C2;
-    padding: 15px 0;
+    border-radius: 15px;
+    background-color: #3cacbb;
+    padding: 13px 0;
     box-shadow: 3px 3px 3px rgba(20, 20, 20, 0.45);
     z-index: 999;
     color: #ffffff;
@@ -105,13 +105,13 @@ h2>.titIcon {
 
 .fixedBtn::after {
     position: absolute;
-    transform: translate(-50%, -50%) rotate(-120deg);
-    top: 63%;
-    left: 93%;
-    content: "\eb54";
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 45%;
+    left: 86%;
+    content: "\eafa";
     font-family: 'xeicon';
-    font-size: 40px;
-    color: #ffffff;
+    font-size: 75px;
+    color: hsla(0, 0%, 100%, 0.20);
     z-index: -1;
 }
 
@@ -120,91 +120,61 @@ h2>.titIcon {
 }
 
 .fixedBtn>a>div>p {
-    font-size: 13px;
-    font-weight: 18px;
-    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 5px;
 }
 
 .fixedBtn>a>div>strong {
     font-size: 18px;
-    font-weight: 18px;
+    line-height: 18px;
+    font-weight: bold;
 }
 
 /* ---------- MAIN ---------- */
 
 #coverPage {
-    height: 70vh;
+    width: 360px;
+    height: 421;
     overflow: hidden;
-    background-image: url("../img/common/bg23-3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    padding: 0;
 }
 
-#coverPage>.blur {
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(5px);
-    background-color: hsla(0, 0%, 13%, 0.45);
+#coverPage>figure {
+    overflow: hidden;
 }
 
-#coverPage>.blur>.coverInfo {
-    position: relative;
+#coverPage>figure>.coverMain {
+    position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#coverPage>.blur>.coverInfo>img {
-    width: 300px;
-    margin-bottom: 30px;
-    position: relative;
     transform: translateY(50%);
     opacity: 0;
     transition: 2s;
+    z-index: 998;
 }
 
-#coverPage>.blur>.coverInfo>h3 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    position: relative;
+#coverPage>figure>.coverTitle {
+    position: absolute;
+    top: 50%;
     transform: translateY(50%);
     opacity: 0;
-    transition: 2s 1s;
+    transition: 1.5s;
+    z-index: 999;
 }
 
-#coverPage>.blur>.coverInfo>p {
-    letter-spacing: 1px;
-    position: relative;
-    transform: translateY(50%);
-    opacity: 0;
-    transition: 2s 1.5s;
-}
-
-.homeCover.swiper-slide-active>main>#coverPage>.blur>.coverInfo>img {
+.homeCover.swiper-slide-active>main>#coverPage>figure {
     opacity: 1;
     transform: translateY(0);
 }
 
-.homeCover.swiper-slide-active>main>#coverPage>.blur>.coverInfo>h3 {
+.homeCover.swiper-slide-active>main>#coverPage>figure>.coverMain {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-50%);
 }
 
-.homeCover.swiper-slide-active>main>#coverPage>.blur>.coverInfo>p {
+.homeCover.swiper-slide-active>main>#coverPage>figure>.coverTitle {
     opacity: 1;
-    transform: translateY(0);
-}
-
-#coverPage>.blur>.coverInfo>p>span {
-    font-size: 18px;
-    font-weight: bold;
-    color: #12A79D;
+    transform: translateY(-50%);
 }
 
 /* ---------- MAIN - MAINNEWS ---------- */
@@ -282,6 +252,7 @@ h2>.titIcon {
 #point .contentBox {
     display: flex;
     gap: 10px;
+    margin-bottom: 45px;
 }
 
 #point .contentBox>li {
@@ -304,6 +275,29 @@ h2>.titIcon {
     padding: 10px 0;
     text-align: center;
 }
+
+#point>.subBtn {
+    background-color: #32afbf;
+    font-weight: bold;
+    width: 200px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* #point>.subBtn>a::after {
+    position: absolute;
+    transform: rotate(-45deg);
+    bottom: 55px;
+    left: 260px;
+    content: "\eafa";
+    font-family: 'xeicon';
+    font-size: 30px;
+    color: hsla(0, 0%, 100%, 0.312);
+    font-weight: normal;
+} */
 
 /* ---------- MAIN - LASTISSUE ---------- */
 
@@ -403,51 +397,50 @@ footer>p {
 
 @media only screen and (min-width: 360px) and (max-width: 500px) {
 
-    #coverPage {
-        height: 500px;
+    .fixedBtn {
+        bottom: 40px;
     }
 
-    #coverPage>.blur>.coverInfo>img {
-        width: 220px;
-        margin-bottom: 30px;
-        position: relative;
+    #coverPage {
+        height: 500px;
+        overflow: hidden;
+    }
+
+    #coverPage>figure {
+        overflow: hidden;
+    }
+
+    #coverPage>figure>.coverMain {
+        position: absolute;
+        top: 50%;
         transform: translateY(50%);
         opacity: 0;
         transition: 2s;
+        z-index: 998;
     }
 
-    #coverPage>.blur>.coverInfo>h3 {
-        font-size: 25px;
-        font-weight: bold;
-        line-height: 25px;
-        margin-bottom: 8px;
-        position: relative;
+    #coverPage>figure>.coverTitle {
+        position: absolute;
+        top: 50%;
         transform: translateY(50%);
         opacity: 0;
-        transition: 2s 1s;
+        transition: 1.5s;
+        z-index: 999;
     }
 
-    #coverPage>.blur>.coverInfo>p {
-        letter-spacing: 1px;
-        position: relative;
-        transform: translateY(50%);
-        opacity: 0;
-        transition: 2s 1.5s;
-    }
-
-    .homeCover.swiper-slide-active>main>#coverPage>.blur>.coverInfo>img {
+    .homeCover.swiper-slide-active>main>#coverPage>figure {
         opacity: 1;
         transform: translateY(0);
     }
 
-    .homeCover.swiper-slide-active>main>#coverPage>.blur>.coverInfo>h3 {
+    .homeCover.swiper-slide-active>main>#coverPage>figure>.coverMain {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(-50%);
     }
 
-    .homeCover.swiper-slide-active>main>#coverPage>.blur>.coverInfo>p {
+    .homeCover.swiper-slide-active>main>#coverPage>figure>.coverTitle {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(-50%);
     }
 
     footer {
