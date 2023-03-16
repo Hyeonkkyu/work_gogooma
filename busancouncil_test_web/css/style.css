@@ -1,0 +1,542 @@
+@charset "utf-8";
+
+/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+} */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+    z-index: 20 !important;
+    padding-top: 100px !important;
+    margin-top: -100px !important;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.swiper-slide .link,
+.swiper-slide .call {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.swiper-slide .link a,
+.swiper-slide .call a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* 수환이행님 아래가 링크버튼 영역 스타일 입니다. */
+.swiper-slide .link_a {
+    top: 397px;
+    left: 46px;
+    width: 338px;
+    height: 68px;
+}
+
+/* 수환이행님 아래가 전화걸기 영역 스타일 입니다. */
+.swiper-slide .call_a {
+    top: 1847px;
+    left: 584px;
+    width: 182px;
+    height: 63px;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background-color: #ffffff;
+    z-index: 20;
+}
+
+.menu {
+    position: absolute;
+    width: 320px;
+    z-index: 30;
+    height: 100px;
+
+}
+
+.menu span {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 35px;
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+    background: url('../img/common/top_menu.png') no-repeat;
+
+}
+
+.logo {
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    width: 255px;
+    height: 40px;
+    background: url('../img/common/top_logo.png') no-repeat center 0;
+    text-indent: -9999px;
+}
+
+.topic {
+    position: absolute;
+    top: -68px;
+    left: 93px;
+    color: #fff;
+    font-size: 34px;
+    letter-spacing: -0.08em;
+    z-index: 40;
+}
+
+.side_menu {
+    position: fixed;
+    left: -400px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #F1F2F2;
+    z-index: 50;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: hidden; */
+}
+
+.side_menu::-webkit-scrollbar {
+    display: none;
+}
+
+.side_menu ul {
+    width: 325px;
+    margin: 100px auto;
+    /* border-top: 1px solid #D1D3D4; */
+}
+
+.side_menu ul>li {
+    padding: 20px 0;
+    /* border-bottom: 1px solid #D1D3D4; */
+}
+
+.side_menu ul>li>a {
+    font-size: 26px;
+    letter-spacing: -0.08em;
+    color: #000;
+    text-decoration: none;
+}
+
+.side_menu ul>li:nth-child(2):hover>.smenuTit {
+    color: #15B1BB;
+}
+
+.side_menu ul>li:nth-child(3):hover>.smenuTit {
+    color: #F0576E;
+}
+
+.side_menu ul>li:nth-child(4):hover>.smenuTit {
+    color: #98B980;
+}
+
+.side_menu ul>li:nth-child(5):hover>.smenuTit {
+    color: #3592C0;
+}
+
+.side_menu ul li.kakao,
+.side_menu ul li.go,
+.side_menu ul li.pastnews {
+    padding: 10px 0;
+}
+
+.side_menu ul li.kakao a,
+.side_menu ul li.go a,
+.side_menu ul li.pastnews a {
+    vertical-align: middle;
+}
+
+.side_menu ul li.kakao>a,
+.side_menu ul li.go>a,
+.side_menu ul li.pastnews>a {
+    font-size: 20px;
+}
+
+.side_menu ul li.kakao:before,
+.side_menu ul li.go:before,
+.side_menu ul li.pastnews:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 51px;
+    width: 51px;
+    margin-right: 10px;
+}
+
+.side_menu ul li.kakao:before {
+    background: url('../img/common/kakao.png') no-repeat;
+}
+
+.side_menu ul li.go:before {
+    background: url('../img/common/go.png') no-repeat;
+}
+
+.side_menu ul li.pastnews:before {
+    background: url('../img/common/pastnews.png') no-repeat;
+}
+
+/* ----- multistage menu 23.03.10 hyeon ----- */
+
+
+.side_menu>ul>li>.smenu {
+    margin: 0;
+    padding: 0;
+}
+
+.side_menu>ul>li:hover>.smenu {
+    display: block;
+    border-top: none;
+    padding-top: 10px;
+}
+
+.side_menu>ul>li:hover>.smenu>li {
+    border-bottom: none;
+}
+
+.smenu {
+    display: none;
+}
+
+.smenu .on {
+    display: block;
+}
+
+.side_menu>ul>li>.smenu>li {
+    padding: 10px 0;
+}
+
+.side_menu>ul>li>.smenu>li>a {
+    line-height: 18px;
+    font-size: 18px;
+    color: #5f5f5f;
+}
+
+.side_menu>ul>li>.smenu>li:hover>a {
+    font-weight: bold;
+    color: #202020;
+}
+
+
+
+/* ----- multistage menu 23.03.10 hyeon ----- */
+
+
+.close {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: 50px;
+    width: 51px;
+    cursor: pointer;
+    background: url('../img/common/close.png') no-repeat;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: fixed !important;
+    top: 50%;
+    margin-top: -47px !important;
+    height: 94px !important;
+    width: 50px !important;
+    opacity: .5;
+    z-index: 20 !important;
+}
+
+.swiper-button-next {
+    background: url('../img/common/right.png') no-repeat !important;
+}
+
+.swiper-button-prev {
+    background: url('../img/common/left.png') no-repeat !important;
+}
+
+.swiper-pagination-fraction {
+    position: fixed !important;
+    left: 50% !important;
+    margin-left: -50px;
+    width: 100px !important;
+    background-color: #202020;
+    padding: 6px 0;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    opacity: .8;
+}
+
+.swiper-pagination-current {
+    font-weight: bold;
+}
+
+.history ul {
+    text-align: center;
+}
+
+.history ul li {
+    display: inline-block;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.history ul li a img {
+    width: 100%;
+    height: auto;
+}
+
+@media all and (max-width: 900px) {
+    .swiper-container {
+        padding-top: 50px !important;
+        margin-top: -50px !important;
+    }
+
+    /* 수환이행님 아래가 링크버튼 영역 스타일 입니다. */
+    .swiper-slide .link_a {
+        top: 11%;
+        left: 4.8%;
+        width: 35.2%;
+        height: 1.9%;
+    }
+
+    /* 수환이행님 아래가 전화걸기 영역 스타일 입니다. */
+    .swiper-slide .call_a {
+        top: 51.3%;
+        left: 60.8%;
+        width: 18.9%;
+        height: 1.8%;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .menu {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu span {
+        top: 15px;
+        left: 15px;
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+
+    }
+
+    .logo {
+        top: 20px;
+        right: 4.5%;
+        height: 17px;
+        width: 108px;
+        background-size: contain;
+    }
+
+    .topic {
+        top: -33px;
+        left: 47px;
+        font-size: 16px;
+    }
+
+    .side_menu {
+        left: -300px;
+        width: 70%;
+    }
+
+    .side_menu ul {
+        width: 220px;
+        margin: 50px 15px;
+    }
+
+    .side_menu>ul>li {
+        padding: 10px 0;
+    }
+
+    .side_menu>ul>li>a {
+        font-size: 18px;
+    }
+
+    .side_menu ul li.kakao,
+    .side_menu ul li.go,
+    .side_menu ul li.pastnews {
+        padding: 5px 0;
+    }
+
+    .side_menu ul li.kakao>a,
+    .side_menu ul li.go>a,
+    .side_menu ul li.pastnews>a {
+        font-size: 16px;
+    }
+
+    .side_menu ul li.kakao:before,
+    .side_menu ul li.go:before,
+    .side_menu ul li.pastnews:before {
+        height: 25px;
+        width: 25px;
+        margin-right: 7px;
+        background-size: 25px 25px;
+    }
+
+
+    /* ----- multistage menu 23.03.10 ----- */
+
+
+    .side_menu>ul>li>.smenu {
+        margin: 0;
+        padding: 0;
+    }
+
+    .side_menu>ul>li:hover>.smenu {
+        display: block;
+        border-top: none;
+        padding-top: 10px;
+    }
+
+    .side_menu>ul>li:hover>.smenu>li {
+        border-bottom: none;
+        margin-bottom: 5px;
+    }
+
+    .smenu {
+        display: none;
+
+    }
+
+    .smenu .on {
+        display: block;
+    }
+
+    .side_menu>ul>li>.smenu>li {
+        padding: 5px 0;
+    }
+
+    .side_menu>ul>li>.smenu>li>a {
+        line-height: 16px;
+        font-size: 16px;
+    }
+
+
+
+    /* ----- multistage menu 23.03.10 ----- */
+
+
+    .close {
+        top: 10px;
+        left: 10px;
+        height: 29px;
+        width: 30px;
+        background-size: 30px 29px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        margin-top: -19px !important;
+        height: 38px !important;
+        width: 20px !important;
+        background-size: 20px 38px !important;
+    }
+
+    .swiper-pagination-fraction {
+        margin-left: -30px;
+        width: 60px !important;
+        padding: 3px 0;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+}

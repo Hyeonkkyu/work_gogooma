@@ -96,7 +96,7 @@ h2>.titIcon {
 .fixedBtn {
     display: none;
     position: fixed;
-    bottom: 2.2rem;
+    bottom: 5rem;
     width: 34rem;
     left: 50%;
     transform: translateX(-50%);
