@@ -7,3 +7,11 @@
     padding: 20px;
     background-color: #5f9ea0;
 }
+
+.test1 {
+    font-weight: bold;
+}
+
+.test2 {
+    font-stretch: ultra-expanded;
+}
