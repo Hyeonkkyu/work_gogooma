@@ -13,7 +13,6 @@
 }
 
 .test2 {
-    /* font-stretch: 300%; */
     /* font-stretch: ultra-condensed; */
     /* font-stretch: extra-condensed; */
     font-stretch: condensed !important;
