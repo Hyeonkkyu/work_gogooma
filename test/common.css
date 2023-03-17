@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@font-face {
+/* @font-face {
     font-family: "NanumSquareNeo";
     src: url("font/woff2/NanumSquareNeo-Variable.woff2") format("woff2"),
         url("font/woff2/NanumSquareNeoTTF-aLt.woff2") format("woff2"),
@@ -16,7 +16,17 @@
         url("font/woff/NanumSquareNeoTTF-eHv.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+} */
+
+
+
+@font-face {
+    font-family: "NanumSquareNeo";
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    /* font-weight: normal;
+    font-style: normal; */
 }
+
 
 /*
 -------------------------------------
@@ -34,6 +44,7 @@ reset
 html {
     /* font-size: 18px; */
     box-sizing: border-box;
+    
 }
 
 *,

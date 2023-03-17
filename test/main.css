@@ -15,10 +15,11 @@
 .test2 {
     /* font-stretch: ultra-condensed; */
     /* font-stretch: extra-condensed; */
-    font-stretch: condensed !important;
+    /* font-stretch: condensed !important; */
     /* font-stretch: semi-condensed; */
     /* font-stretch: semi-expanded; */
     /* font-stretch: expanded; */
     /* font-stretch: extra-expanded; */
     /* font-stretch: ultra-expanded; */
+    font-stretch: 150%;
 }
