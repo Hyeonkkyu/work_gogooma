@@ -20,11 +20,11 @@ $(function () {
 })
 
 let previousUrl = window.location.href;
+let init = true;
 
 setInterval(function () {
-    let init = true;
     const currentUrl = window.location.href;
-    if (currentUrl !== previousUrl || init) {
+    if (previousUrl !== currentUrl || init) {
         let nowPage = currentUrl.substring(previousUrl.lastIndexOf('#'));
         console.log('URL이 변경되었습니다.');
         console.log(nowPage);
