@@ -69,5 +69,8 @@ setInterval(function () {
             }
         });
     }
+    //초기화 시에만 작동하도록 매개변수 지정
     init = false;
+    //페이지 옮김 후 받아온 페이지를 현재 페이지로 갱신
+    previousUrl = window.location.href;
 }, 100); // 0.1초마다 체크
